@@ -1,0 +1,180 @@
+$input-padding: 0.5rem 0.75rem !default;
+$input-border-radius: config('borderRadius.rounded') !default;
+
+$input-color: config('colors.grey-darker') !default;
+$input-hover-color: config('colors.grey-darkest') !default;
+$input-disabled-color: config('colors.grey-light') !default;
+
+$input-placeholder-color: config('colors.grey') !default;
+$input-hover-placeholder-color: config('colors.grey-darkest') !default;
+$input-disabled-placeholder-color: config('colors.grey') !default;
+
+$input-border-color: config('colors.grey-light') !default;
+$input-hover-border-color: config('colors.grey') !default;
+$input-active-border-color: config('colors.grey-light') !default;
+$input-disabled-border-color: config('colors.grey-light') !default;
+
+$input-background-color: config('colors.white') !default;
+$input-disabled-background-color: config('colors.grey-lighter') !default;
+
+$input-shadow: inset 0 4px 4px -2px rgba(0, 0, 0, .05) !default;
+
+$select-arrow-color: config('colors.black') !default;
+$select-disabled-arrow-color: config('colors.grey-light') !default;
+
+@mixin input {
+    @include control;
+
+    color: $input-color;
+    padding: $input-padding;
+    border-color: $input-border-color;
+    border-radius: $input-border-radius;
+    background-color: $input-background-color;
+
+    @include placeholder {
+        color: $input-placeholder-color;
+    }
+
+    &:hover {
+        color: $input-hover-color;
+        border-color: $input-hover-border-color;
+
+        @include placeholder {
+            color: $input-hover-placeholder-color;
+        }
+    }
+
+    &:focus,
+    &:active {
+        border-color: $input-active-border-color;
+    }
+
+    &[disabled] {
+        box-shadow: none;
+        color: $input-disabled-color;
+        border-color: $input-disabled-border-color;
+        background-color: $input-disabled-background-color;
+
+        @include placeholder {
+            color: $input-disabled-placeholder-color;
+        }
+    }
+}
+
+.input,
+.textarea {
+    @include input;
+
+    width: 100%;
+    max-width: 100%;
+    box-shadow: $input-shadow;
+}
+
+.textarea {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    resize: vertical;
+    max-height: 600px;
+
+    &:not([rows]) {
+        min-height: 120px;
+    }
+
+    &[rows] {
+        height: initial;
+    }
+}
+
+.select {
+    max-width: 100%;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    
+    &:not(.is-multiple) {
+        height: calc(2.75em + 4px);
+    }
+    
+    &:not(.is-multiple) {
+        &:after {
+            z-index: 4;
+            top: 50%;
+            content: '';
+            right: 1.125em;
+            display: block;
+            width: 0.625em;
+            height: 0.625em;
+            border-radius: 2px;
+            position: absolute;
+            margin-top: -0.3em;
+            pointer-events: none;
+            transform-origin: center;
+            transform: rotate(-45deg);
+            border: solid 3px $select-arrow-color;
+            border-top: 0;
+            border-right: 0;
+        }
+    }
+
+    select {
+        @include input;
+        
+        outline: none;
+        display: block;
+        cursor: pointer;
+        max-width: 100%;
+        
+        &::-ms-expand {
+            display: none;
+        }
+
+        &:not([multiple]) {
+            padding-right: 2.5em;
+        }
+
+        &[multiple] {
+            padding: 0;
+            height: auto;
+
+            option {
+                padding: 0.5em 1em;
+            }
+        }
+    }
+
+    &:not(.is-multiple):hover {
+        &:after {
+            border-color: $select-arrow-color;
+        }
+    }
+
+//   // Colors
+//   @each $name, $pair in $colors
+//     $color: nth($pair, 1)
+//     &.is-#{$name}
+//       &:not(:hover)::after
+//         border-color: $color
+//       select
+//         border-color: $color
+//         &:hover,
+//         &.is-hovered
+//           border-color: darken($color, 5%)
+//         &:focus,
+//         &.is-focused,
+//         &:active,
+//         &.is-active
+//           box-shadow: $input-focus-box-shadow-size rgba($color, 0.25)
+
+    &.is-disabled {
+        &:after {
+            border-color: $select-disabled-arrow-color;
+        }
+    }
+
+    &.w-full {
+        select {
+            width: 100%
+        }
+    }
+}

@@ -1,0 +1,20 @@
+$title-size: config('textSizes.3xl') !default;
+$title-weight: config('fontWeights.bold') !default;
+
+$subtitle-size: config('textSizes.sm') !default;
+$subtitle-weight: config('fontWeights.normal') !default;
+
+.title,
+.subtitle {
+    word-break: break-word;
+}
+
+.title {
+    font-size: $title-size;
+    font-weight: $title-weight;
+}
+
+.subtitle {
+    font-size: $subtitle-size;
+    font-weight: $subtitle-weight;
+}

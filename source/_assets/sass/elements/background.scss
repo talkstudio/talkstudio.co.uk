@@ -1,0 +1,15 @@
+.bg-header {
+    background-image: url('/assets/images/layout/header-background.jpg');
+}
+
+@screen md {
+    .bg-clouds {
+        background-image: url('/assets/images/layout/background-clouds.png');
+    }
+}
+
+@responsive {
+    .bg-gradient-grey-light-to-white {
+        background-image: linear-gradient(45deg, config('colors.grey-light'), config('colors.white'));
+    }
+}

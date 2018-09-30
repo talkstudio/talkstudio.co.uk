@@ -1,0 +1,39 @@
+.image-overlay {
+    position: relative;
+
+    img {
+        z-index: 1;
+    }
+
+    .overlay {
+        @include overlay;
+        @include transition;
+
+        z-index: 2;
+        opacity: 0;
+        display: flex;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .overlay-content {
+        @include transition;
+        
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(30%);
+    }
+
+    &:hover {
+        .overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .overlay-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+}

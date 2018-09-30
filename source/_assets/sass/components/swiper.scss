@@ -1,0 +1,47 @@
+.swiper {
+    .swiper-wrapper {
+        padding-bottom: 6rem;
+    }
+    
+    .navigation {
+        z-index: 5;
+        @apply w-14;
+        @apply h-14;
+        @apply rounded;
+        @apply border-4;
+        @apply text-black;
+        @apply border-grey-lighter;
+        
+        outline: 0;
+        bottom: 12px;
+        display: block;
+        position: absolute;
+        transform: rotate(45deg);
+
+        .icon {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        &.is-prev {
+            left: 12px;
+        }
+
+        &.is-next {
+            right: 12px;
+        }
+    }
+
+    @screen md {
+        .swiper-wrapper {
+            padding-bottom: 0;
+        }
+
+        .navigation {
+            top: 50%;
+            bottom: auto;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.input,
+.textarea {
+    &.is-dark {
+        @apply text-grey;
+        @apply bg-grey-darker;
+        @apply border-grey-darker;
+
+        @include placeholder {
+            @apply text-grey;
+        }
+
+        &:hover {
+            @apply text-grey-light;
+            @apply border-grey-dark;
+
+            @include placeholder {
+                @apply text-grey-light;
+            }
+        }
+
+        &:focus,
+        &:active {
+            @apply border-grey-dark;
+        }
+    }
+}
+
+.select {
+    &.is-dark {
+        select {
+            @apply text-grey;
+            @apply bg-grey-darker;
+            @apply border-grey-darker;
+        
+            &:hover,
+            &:focus,
+            &:active {
+                @apply border-grey-dark;
+            }
+        }
+    }
+}

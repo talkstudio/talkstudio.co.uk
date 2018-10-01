@@ -2,7 +2,10 @@ import './bootstrap';
 import './lib/icons';
 
 import VueScrollTo from 'vue-scrollto';
-Vue.use(VueScrollTo);
+Vue.use(VueScrollTo, {
+    easing: 'ease-in-out',
+    duration: 800
+});
 
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 Vue.use(VueAwesomeSwiper);

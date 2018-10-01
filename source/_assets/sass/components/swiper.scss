@@ -1,47 +1,61 @@
-.swiper {
-    .swiper-wrapper {
-        padding-bottom: 6rem;
-    }
-    
-    .navigation {
+
+.swiper-navigation-holder {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem 1rem 1rem;
+
+    .swiper-navigation {
         z-index: 5;
-        @apply w-14;
-        @apply h-14;
         @apply rounded;
         @apply border-4;
         @apply text-black;
         @apply border-grey-lighter;
         
         outline: 0;
-        bottom: 12px;
+        width: 3.5rem;
+        height: 3.5rem;
         display: block;
-        position: absolute;
+        position: relative;
         transform: rotate(45deg);
-
+    
         .icon {
             top: 50%;
             left: 50%;
             position: absolute;
             transform: translate(-50%, -50%) rotate(-45deg);
         }
-
+    
         &.is-prev {
-            left: 12px;
+            margin-right: 1rem;
+        }
+    
+        &.is-next {
+            margin-left: 1rem;
         }
 
-        &.is-next {
-            right: 12px;
+        &.is-disabled {
+            opacity: 0.2;
         }
     }
-
+    
     @screen md {
-        .swiper-wrapper {
-            padding-bottom: 0;
-        }
+        left: 0;
+        right: 0;
+        top: 50%;
+        padding: 1rem;
+        position: absolute;
+        pointer-events: none;
+        justify-content: space-between;
 
-        .navigation {
+        .swiper-navigation {
             top: 50%;
             bottom: auto;
+            pointer-events: all;
+
+            &.is-prev,
+            &.is-next {
+                margin: 0;
+            }
         }
     }
 }

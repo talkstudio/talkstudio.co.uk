@@ -3,7 +3,7 @@
 @section('content')
     {{-- TODO --}}
     {{-- Header slider --}}
-    {{-- Refactor --}}
+    {{-- Mobile Navigation --}}
 
     <section class="flex justify-between flex-col min-h-screen bg-header bg-center bg-cover">
         <div>
@@ -48,7 +48,7 @@
                     <img src="/assets/images/layout/consultancy.svg" alt="UI &amp; UX Consultancy" class="max-w-2/3 lg:mb-6">
 
                     <div class="content">
-                        <h2>UI &amp; UX Consultancy</h2>
+                        <h2 class="font-serif">UI &amp; UX Consultancy</h2>
                         <p>Nunc ut lorem sit amet turpis ultricies mattis. Duis tincidunt dui ut est rutrum posuere. Nunc varius, elit eu maximus porta, nisi arcu porttitor turpis, non viverra dolor augue eu nisi. Aenean consequat mi non ligula dictum, et rutrum ex sagittis ante dapibus.</p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     <img src="/assets/images/layout/web-design.svg" alt="Web Design" class="max-w-2/3 lg:mb-6">
 
                     <div class="content">
-                        <h2>Web Design</h2>
+                        <h2 class="font-serif">Web Design</h2>
                         <p>Nunc ut lorem sit amet turpis ultricies mattis. Duis tincidunt dui ut est rutrum posuere. Nunc varius, elit eu maximus porta, nisi arcu porttitor turpis, non viverra dolor augue eu nisi. Aenean consequat mi non ligula dictum, et rutrum ex sagittis ante dapibus.</p>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     <img src="/assets/images/layout/branding.svg" alt="Branding" class="max-w-2/3 lg:mb-6">
 
                     <div class="content">
-                        <h2>Branding</h2>
+                        <h2 class="font-serif">Branding</h2>
                         <p>Nunc ut lorem sit amet turpis ultricies mattis. Duis tincidunt dui ut est rutrum posuere. Nunc varius, elit eu maximus porta, nisi arcu porttitor turpis, non viverra dolor augue eu nisi. Aenean consequat mi non ligula dictum, et rutrum ex sagittis ante dapibus.</p>
                     </div>
                 </div>
@@ -149,20 +149,19 @@
             <div class="max-w-xl mx-auto">
                 <testimonial-swiper>
                     @foreach(range(1, 4) as $i)
-                        <swiper-slide{{ $i !== 1 ? ' v-cloak' : null }}>
-                            <div class="md:mx-32">
+                        <swiper-slide{{ $i !== 1 ? ' v-cloak' : null }} class="bg-white">
+                            <div class="px-10">
                                 <img
                                     alt=""
                                     src="/assets/images/placeholders/quote.jpg"
                                     class="mx-auto mb-4 rounded-full"
-                                    data-swiper-parallax-x="-100"
                                 >
 
-                                <div class="font-light text-lg mb-6" data-swiper-parallax-x="-300">
+                                <div class="font-light text-lg mb-6" data-swiper-parallax-x="-50">
                                     <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus.</p>
                                 </div>
 
-                                <p data-swiper-parallax-x="-600">
+                                <p data-swiper-parallax-x="-80">
                                     <strong class="uppercase">Rich Moore - Director, Rich Tea Biscuits</strong>
                                 </p>
                             </div>

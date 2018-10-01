@@ -59,6 +59,7 @@ $buttonColours: (
     
             &:hover {
                 @apply bg-#{nth($values, 2)};
+                @apply text-#{nth($values, 2)};
                 @apply border-#{nth($values, 2)};
             }
         }

@@ -2,38 +2,37 @@
 
 @section('content')
     {{-- TODO --}}
-    {{-- Header slider --}}
     {{-- Mobile Navigation --}}
 
-    <section class="flex justify-between flex-col min-h-screen bg-header bg-center bg-cover">
+    <section class="flex flex-col min-h-screen bg-header bg-center bg-cover">
         <div>
             @include('_partials.header')
         </div>
 
-        <div class="flex items-center flex-grow">
-            <div class="max-w-3xl mx-auto flex-grow text-white">
-                <div class="mx-10 py-32 text-center lg:w-2/5 lg:text-left">
-                    <h3 class="subtitle mb-6">Web design project</h3>
-                    <h2 class="title text-5xl">Company name placeholder</h2>
-
-                    <hr class="w-3/4 lg:ml-0 my-6">
-
-                    <a class="button is-white is-outlined">
-                        <span>View site</span>
-
-                        <span class="icon">
-                            <icon icon="angle-right"></icon>
-                        </span>
-                    </a>
-                </div>
-            </div>
+        <div class="flex flex-grow">
+            <banner-swiper :pagination="['Project One', 'Project Two', 'Project Three']">
+                @foreach(range(1, 3) as $i)
+                    <swiper-slide{{ $i !== 1 ? ' v-cloak' : null }} class="flex">
+                        <div class="flex flex-grow justify-center w-full max-w-3xl mx-auto text-white lg:justify-start lg:pb-32">
+                            <div class="mx-10 py-32 text-center lg:w-2/5 lg:text-left">
+                                <h3 class="subtitle mb-6" data-swiper-parallax-x="-20%">Web design project {{ $i }}</h3>
+                                <h2 class="title text-4xl md:text-5xl" data-swiper-parallax-x="-40%">Company name placeholder</h2>
+    
+                                <hr class="w-3/4 lg:ml-0 my-6">
+    
+                                <a class="button is-white is-outlined" data-swiper-parallax-x="-60%">
+                                    <span>View site</span>
+    
+                                    <span class="icon">
+                                        <icon icon="angle-right"></icon>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                @endforeach
+            </banner-swiper>
         </div>
-
-        {{--
-        <div>
-            Navigation
-        </div>
-        --}}
     </section>
 
     <section id="services" class="max-w-md lg:max-w-3xl mx-auto">
@@ -75,39 +74,37 @@
     </section>
 
     <section id="about" class="bg-clouds bg-left-top bg-no-repeat">
-        <div class="max-w-md lg:max-w-3xl mx-auto">
-            <div class="mx-10 py-10 lg:pb-20">
-                <div class="lg:flex">
-                    <div class="lg:w-3/5 lg:pt-10">
-                        <img src="/assets/images/layout/workspace.png" alt="">
-                    </div>
-
-                    <div class="pt-12 text-center lg:pt-0 lg:text-left lg:w-2/5">
-                        <h3 class="subtitle">About Talk</h3>
-                        <h2 class="title mb-5">Our history</h2>
-                        <div class="mx-auto w-10 h-1 bg-black mb-10 lg:ml-0"></div>
-
-                        <div class="content">
-                            <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus. Sed tincidunt pharetra purus, quis pretium sem scelerisque nec.</p>
-                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse laoreet ligula eget pulvinar semper. Mauris ipsum justo, fermentum quis ante pulvinar, iaculis porttitor tellus. </p>
-                            <p>
-                                <a class="button is-grey-darker is-outlined">
-                                    <span>Talk to us</span>
-
-                                    <span class="icon">
-                                        <icon icon="angle-right"></icon>
-                                    </span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
+        <div class="max-w-md lg:max-w-3xl mx-auto px-10 py-10 lg:pb-20">
+            <div class="lg:flex">
+                <div class="lg:w-3/5 lg:pt-10">
+                    <img src="/assets/images/layout/workspace.png" alt="">
                 </div>
 
-                <div id="portfolio" class="pt-20 text-center">
-                    <h4 class="subtitle">Portfolio</h4>
-                    <h3 class="title mb-5">Some of our work</h3>
-                    <div class="mx-auto w-10 h-1 bg-black"></div>
+                <div class="pt-12 text-center lg:pt-0 lg:text-left lg:w-2/5">
+                    <h3 class="subtitle">About Talk</h3>
+                    <h2 class="title mb-5">Our history</h2>
+                    <div class="mx-auto w-10 h-1 bg-black mb-10 lg:ml-0"></div>
+
+                    <div class="content">
+                        <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus. Sed tincidunt pharetra purus, quis pretium sem scelerisque nec.</p>
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse laoreet ligula eget pulvinar semper. Mauris ipsum justo, fermentum quis ante pulvinar, iaculis porttitor tellus. </p>
+                        <p>
+                            <a class="button is-grey-darker is-outlined">
+                                <span>Talk to us</span>
+
+                                <span class="icon">
+                                    <icon icon="angle-right"></icon>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
                 </div>
+            </div>
+
+            <div id="portfolio" class="pt-20 text-center">
+                <h4 class="subtitle">Portfolio</h4>
+                <h3 class="title mb-5">Some of our work</h3>
+                <div class="mx-auto w-10 h-1 bg-black"></div>
             </div>
         </div>
     </section>
@@ -139,36 +136,34 @@
         @endforeach
     </section>
 
-    <section id="testimonials" class="max-w-3xl mx-auto">
-        <div class="mx-10 py-20 text-center">
-            <h3 class="subtitle">Testimonials</h3>
-            <h2 class="title mb-5">Your thoughts</h2>
+    <section id="testimonials" class="max-w-3xl mx-auto px-10 py-20 text-center">
+        <h3 class="subtitle">Testimonials</h3>
+        <h2 class="title mb-5">Your thoughts</h2>
 
-            <div class="w-10 h-1 bg-black mx-auto mb-10"></div>
+        <div class="w-10 h-1 bg-black mx-auto mb-10"></div>
 
-            <div class="max-w-xl mx-auto">
-                <testimonial-swiper>
-                    @foreach(range(1, 4) as $i)
-                        <swiper-slide{{ $i !== 1 ? ' v-cloak' : null }} class="bg-white">
-                            <div class="px-10">
-                                <img
-                                    alt=""
-                                    src="/assets/images/placeholders/quote.jpg"
-                                    class="mx-auto mb-4 rounded-full"
-                                >
+        <div class="max-w-xl mx-auto">
+            <testimonial-swiper>
+                @foreach(range(1, 4) as $i)
+                    <swiper-slide{{ $i !== 1 ? ' v-cloak' : null }} class="bg-white">
+                        <div class="px-10">
+                            <img
+                                alt=""
+                                src="/assets/images/placeholders/quote.jpg"
+                                class="mx-auto mb-4 rounded-full"
+                            >
 
-                                <div class="font-light text-lg mb-6" data-swiper-parallax-x="-50">
-                                    <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus.</p>
-                                </div>
-
-                                <p data-swiper-parallax-x="-80">
-                                    <strong class="uppercase">Rich Moore - Director, Rich Tea Biscuits</strong>
-                                </p>
+                            <div class="font-light text-lg mb-6" data-swiper-parallax-x="-50">
+                                <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus.</p>
                             </div>
-                        </swiper-slide>
-                    @endforeach
-                </testimonial-swiper>
-            </div>
+
+                            <p data-swiper-parallax-x="-80">
+                                <strong class="uppercase">Rich Moore - Director, Rich Tea Biscuits</strong>
+                            </p>
+                        </div>
+                    </swiper-slide>
+                @endforeach
+            </testimonial-swiper>
         </div>
     </section>
 

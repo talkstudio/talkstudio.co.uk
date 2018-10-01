@@ -1,5 +1,5 @@
-<header class="max-w-3xl mx-auto">
-    <div class="flex justify-between py-6 mx-10 border-b border-white-a35">
+<header class="max-w-3xl mx-auto px-10">
+    <div class="flex justify-between py-6 border-b border-white-a35">
         <div>
             <h1 class="leading-none">
                 <a href="/">

@@ -12,6 +12,7 @@ Vue.use(VueAwesomeSwiper);
 
 import 'swiper/dist/css/swiper.css';
 
+Vue.component('banner-swiper', require('./components/BannerSwiper'));
 Vue.component('testimonial-swiper', require('./components/TestimonialSwiper'));
 
 const app = new Vue({

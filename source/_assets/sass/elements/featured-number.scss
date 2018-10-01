@@ -1,0 +1,19 @@
+.featured-number {
+    @apply border;
+    @apply border-white;
+
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    margin: 0.5rem;
+    align-items: center;
+    border-radius: 0.25rem;
+    justify-content: center;
+    transform: rotate(45deg);
+
+    > span {
+        @apply font-bold;
+        @apply font-serif;
+        transform: rotate(-45deg);
+    }
+}

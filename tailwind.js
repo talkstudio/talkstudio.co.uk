@@ -173,6 +173,7 @@ module.exports = {
         'md': '768px',
         'lg': '992px',
         'xl': '1200px',
+        'until-lg': { 'max': '992px' }
     },
 
 
@@ -483,7 +484,8 @@ module.exports = {
         '1/6': '16.66667%',
         '5/6': '83.33333%',
         'full': '100%',
-        'screen': '100vw'
+        'screen': '100vw',
+        'branding': '252px'
     },
 
 
@@ -594,7 +596,7 @@ module.exports = {
         '5xl': '100rem',
         '2/3': '66%',
         'full': '100%',
-        'branding': '250px'
+        '5/6': '83.33333%'
     },
 
 

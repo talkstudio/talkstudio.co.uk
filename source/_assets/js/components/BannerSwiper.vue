@@ -7,16 +7,17 @@
     >
         <slot></slot>
 
-        <div class="hidden lg:flex absolute pin-x pin-b z-10 h-32" slot="pagination">
+        <div class="flex absolute pin-x pin-b z-10 h-16 lg:h-32" slot="pagination">
             <div class="flex flex-grow max-w-3xl mx-auto px-10">
-                <div class="banner-swiper-pagination flex flex-grow border-t border-white-a35">
+                <div class="banner-swiper-pagination flex flex-grow">
                     <a
                         :key="index"
+                        class="flex lg:flex-grow"
                         v-for="(label, index) in pagination"
                         @click="setActiveSlide(index)"
                         :class="{ 'is-active': activeSlide === index }"
                     >
-                        <span>
+                        <span class="hidden flex-grow items-end p-8 lg:flex">
                             <span class="w-full flex">
                                 <span class="flex-shrink mr-2">
                                     <span class="featured-number">

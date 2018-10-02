@@ -3,7 +3,7 @@
         <div class="flex items-center pr-10">
             <h1 class="leading-none">
                 <a href="/" title="Talk Studio">
-                    @include('_partials.branding', ['class' => 'w-full max-w-branding text-white'])
+                    @include('_partials.branding', ['class' => 'max-w-5/6 w-branding text-white'])
                 </a>
             </h1>
         </div>

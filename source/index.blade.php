@@ -14,7 +14,7 @@
             <banner-swiper :pagination="['Project One', 'Project Two', 'Project Three']">
                 @foreach(range(1, 3) as $i)
                     <swiper-slide{{ $i !== 1 ? ' v-cloak' : null }} class="flex">
-                        <div class="flex flex-grow justify-center w-full max-w-3xl mx-auto text-white lg:justify-start lg:pb-32">
+                        <div class="flex flex-grow justify-center w-full max-w-3xl mx-auto text-white pb-16 lg:justify-start lg:pb-32">
                             <div class="mx-10 py-32 text-center lg:w-2/5 lg:text-left">
                                 <h3 class="subtitle mb-6" data-swiper-parallax-x="-20%">Web design project {{ $i }}</h3>
                                 <h2 class="title text-4xl md:text-5xl" data-swiper-parallax-x="-40%">Company name placeholder</h2>
@@ -147,21 +147,19 @@
             <testimonial-swiper>
                 @foreach(range(1, 4) as $i)
                     <swiper-slide{{ $i !== 1 ? ' v-cloak' : null }} class="bg-white">
-                        <div class="px-10">
-                            <img
-                                alt=""
-                                src="/assets/images/placeholders/quote.jpg"
-                                class="mx-auto mb-4 rounded-full"
-                            >
+                        <img
+                            alt=""
+                            src="/assets/images/placeholders/quote.jpg"
+                            class="mx-auto mb-4 rounded-full"
+                        >
 
-                            <div class="font-light text-lg mb-6" data-swiper-parallax-x="-50">
-                                <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus.</p>
-                            </div>
-
-                            <p data-swiper-parallax-x="-80">
-                                <strong class="uppercase">Rich Moore - Director, Rich Tea Biscuits</strong>
-                            </p>
+                        <div class="font-light text-lg mb-6" data-swiper-parallax-x="-50">
+                            <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus.</p>
                         </div>
+
+                        <p data-swiper-parallax-x="-80">
+                            <strong class="uppercase">Rich Moore - Director, Rich Tea Biscuits</strong>
+                        </p>
                     </swiper-slide>
                 @endforeach
             </testimonial-swiper>

@@ -1,9 +1,9 @@
 <header class="max-w-3xl mx-auto px-10">
     <div class="flex justify-between py-6 border-b border-white-a35">
-        <div>
+        <div class="flex items-center pr-10">
             <h1 class="leading-none">
-                <a href="/">
-                    <img src="/assets/images/layout/logo.svg" alt="Talk Studio">
+                <a href="/" title="Talk Studio">
+                    @include('_partials.branding', ['class' => 'w-full max-w-branding text-white'])
                 </a>
             </h1>
         </div>

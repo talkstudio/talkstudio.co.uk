@@ -594,6 +594,7 @@ module.exports = {
         '5xl': '100rem',
         '2/3': '66%',
         'full': '100%',
+        'branding': '250px'
     },
 
 

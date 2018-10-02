@@ -2,6 +2,7 @@
 
 @section('content')
     {{-- TODO --}}
+    {{-- Header slider pagination on mobile --}}
     {{-- Mobile Navigation --}}
 
     <section class="flex flex-col min-h-screen bg-header bg-center bg-cover">

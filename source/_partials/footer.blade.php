@@ -104,7 +104,7 @@
 
         <div class="md:flex md:justify-between items-center py-8">
             <div class="text-center mb-6 md:mb-0">
-                <img src="/assets/images/layout/logo.svg" alt="Talk" class="w-24">
+                @include('_partials.branding', ['class' => 'w-24 text-white'])
             </div>
 
             <div class="text-center text-xs">

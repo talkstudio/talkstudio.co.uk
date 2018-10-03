@@ -13,6 +13,7 @@ Vue.use(VueAwesomeSwiper);
 import 'swiper/dist/css/swiper.css';
 
 Vue.component('banner-swiper', require('./components/BannerSwiper'));
+Vue.component('mobile-nav', require('./components/MobileNav'));
 Vue.component('testimonial-swiper', require('./components/TestimonialSwiper'));
 
 const app = new Vue({
@@ -21,6 +22,17 @@ const app = new Vue({
     data() {
         return {
             navIsOpen: false
+        }
+    },
+
+    methods: {
+        toggleNav() {
+            this.navIsOpen = ! this.navIsOpen;
+        },
+
+        mobileScrollTo(element) {
+            this.navIsOpen = false;
+            VueScrollTo.scrollTo(`#${element}`);
         }
     }
 });

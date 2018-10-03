@@ -49,6 +49,25 @@
         }
     }
 
+    &.is-mobile {
+        > li {
+            @apply py-2;
+            
+            &:not(:last-child) {
+                @apply border-b;
+                @apply border-white-a35;
+            }
+
+            > a {
+                @apply py-4;
+                display: block;
+                @apply font-bold;
+                @apply uppercase;
+                @apply text-white;
+            }
+        }
+    }
+
     &.is-divided {
         display: inline-flex;
 

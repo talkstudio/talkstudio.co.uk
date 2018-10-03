@@ -4,7 +4,7 @@
     {{-- TODO --}}
     {{-- Mobile Navigation --}}
 
-    <section class="flex flex-col min-h-screen bg-header">
+    <section id="top" class="flex flex-col min-h-screen bg-header">
         <div>
             @include('_partials.header')
         </div>

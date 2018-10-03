@@ -1,8 +1,11 @@
 .hamburger {
     z-index: 50;
 
-    top: 50%;
+    top: 1.5rem;
     right: 2.5rem;
     position: absolute;
-    transform: translateY(-50%);
+
+    &.is-active {
+        position: fixed;
+    }
 }

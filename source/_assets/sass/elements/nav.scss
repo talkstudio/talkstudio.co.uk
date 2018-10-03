@@ -52,10 +52,9 @@
     &.is-mobile {
         > li {
             @apply py-2;
-            
+
             &:not(:last-child) {
-                @apply border-b;
-                @apply border-white-a35;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             }
 
             > a {

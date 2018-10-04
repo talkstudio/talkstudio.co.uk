@@ -89,7 +89,7 @@
                         <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus. Sed tincidunt pharetra purus, quis pretium sem scelerisque nec.</p>
                         <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse laoreet ligula eget pulvinar semper. Mauris ipsum justo, fermentum quis ante pulvinar, iaculis porttitor tellus. </p>
                         <p>
-                            <a class="button is-grey-darker is-outlined">
+                            <a v-scroll-to="'#footer'" class="button is-grey-darker is-outlined">
                                 <span>Talk to us</span>
 
                                 <span class="icon">

@@ -88,7 +88,6 @@
                 <h3 class="title text-white mb-4">Get in touch</h3>
 
                 <p class="leading-loose mb-8">
-                    <a href="tel:07472862114" class="text-grey">07472 862 114</a><br>
                     <a href="mailto:info@talkstudio.co.uk" class="text-grey">info@talk.com</a>
                 </p>
 

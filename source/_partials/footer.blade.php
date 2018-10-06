@@ -5,7 +5,7 @@
                 <div class="mb-8 text-center md:text-left lg:w-1/3 lg:pr-10">
                     <h4 class="subtitle text-white">Email us</h4>
                     <h3 class="title text-white mb-4">Got a question</h3>
-                    <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis. Donec quis leo a nisl hendrerit aliquam ac dictum libero.</p>
+                    <p>Need a full quote or just simply want a chat about your needs? Give us a shout!</p>
                 </div>
 
                 <div class="mb-16 lg:mb-0 lg:w-2/3 lg:pr-10">

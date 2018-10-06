@@ -44,20 +44,20 @@
 
             <div class="lg:flex">
                 <div class="mb-10 lg:w-1/3 lg:pr-12">
-                    <img src="/assets/images/layout/consultancy.svg" alt="UI &amp; UX Consultancy" class="max-w-2/3 lg:mb-6">
-
-                    <div class="content">
-                        <h2 class="font-serif">UI &amp; UX Consultancy</h2>
-                        <p>Nunc ut lorem sit amet turpis ultricies mattis. Duis tincidunt dui ut est rutrum posuere. Nunc varius, elit eu maximus porta, nisi arcu porttitor turpis, non viverra dolor augue eu nisi. Aenean consequat mi non ligula dictum, et rutrum ex sagittis ante dapibus.</p>
-                    </div>
-                </div>
-
-                <div class="mb-10 lg:w-1/3 lg:px-6">
                     <img src="/assets/images/layout/web-design.svg" alt="Web Design" class="max-w-2/3 lg:mb-6">
-
+    
                     <div class="content">
                         <h2 class="font-serif">Web Design</h2>
-                        <p>Nunc ut lorem sit amet turpis ultricies mattis. Duis tincidunt dui ut est rutrum posuere. Nunc varius, elit eu maximus porta, nisi arcu porttitor turpis, non viverra dolor augue eu nisi. Aenean consequat mi non ligula dictum, et rutrum ex sagittis ante dapibus.</p>
+                        <p>Whether you need a content management system (CMS) with more complex capabilities or a simpler, brochure site, our highly experienced designers and developers create websites tailored to suit you and your business.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-10 lg:w-1/3 lg:px-6">
+                    <img src="/assets/images/layout/consultancy.svg" alt="UI &amp; UX Consultancy" class="max-w-2/3 lg:mb-6">
+    
+                    <div class="content">
+                        <h2 class="font-serif">UI &amp; UX Consultancy</h2>
+                        <p>Our experts each have over 10 years experience in their prospective disciplines and can help you achieve your business goals through user interface (UI) and user journey (UX) consultancy on your existing site to help convert more users into customers.</p>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@
 
                     <div class="content">
                         <h2 class="font-serif">Branding</h2>
-                        <p>Nunc ut lorem sit amet turpis ultricies mattis. Duis tincidunt dui ut est rutrum posuere. Nunc varius, elit eu maximus porta, nisi arcu porttitor turpis, non viverra dolor augue eu nisi. Aenean consequat mi non ligula dictum, et rutrum ex sagittis ante dapibus.</p>
+                        <p>Our designers have been developing brands with customers for years. We really know how to get into the crocks of a business and find out exactly what it is that makes you… You. We can then build a visual representation that reflects your business’ strengths and personality to create an eye-catching brand.</p>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,7 @@
                     <div class="mx-auto w-10 h-1 bg-black mb-10 lg:ml-0"></div>
 
                     <div class="content">
-                        <p>Curabitur eget dui ut elit molestie interdum. Duis sollicitudin ante urna, sit amet varius nunc elementum in. Aenean sed elit mattis, molestie dui at, congue ex. Mauris ultrices facilisis mollis. In ex tellus, malesuada in justo ut, dapibus mollis justo. Donec dignissim diam nec convallis facilisis. Integer nec varius risus. Sed tincidunt pharetra purus, quis pretium sem scelerisque nec.</p>
-                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse laoreet ligula eget pulvinar semper. Mauris ipsum justo, fermentum quis ante pulvinar, iaculis porttitor tellus. </p>
+                        <p>Just three guys solving business problems through design and development. Having worked for numerous larger agencies we started TalkStudio to provide small businesses with a simple sales solution in the form of websites. No fuss and no expense spared.</p>
                         <p>
                             <a v-scroll-to="'#footer'" class="button is-grey-darker is-outlined">
                                 <span>Talk to us</span>

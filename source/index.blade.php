@@ -1,9 +1,6 @@
 @extends('_layouts.app')
 
 @section('content')
-    {{-- TODO --}}
-    {{-- Mobile Navigation --}}
-
     <section id="top" class="flex flex-col min-h-screen bg-header">
         <div>
             @include('_partials.header')
@@ -156,7 +153,7 @@
                         </div>
 
                         <p data-swiper-parallax-x="-80">
-                            <strong class="uppercase">Rich Moore - Director, Rich Tea Biscuits</strong>
+                            <strong class="uppercase">Rich Tea Biscuits</strong>
                         </p>
                     </swiper-slide>
                 @endforeach

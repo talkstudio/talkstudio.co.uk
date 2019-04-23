@@ -8,7 +8,7 @@
 
         <title>Talk Studio</title>
 
-        <link rel="stylesheet" href="/assets/build/css/app.css?id=794910ce3f54ee81262e">
+        <link rel="stylesheet" href="/assets/build/css/app.css?id=bce7eaea1eb14df1b51d">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Source+Sans+Pro:300,400,600" rel="stylesheet">
     </head>
 
@@ -58,7 +58,7 @@
                 <li>
                     <a
                         v-scroll-to="'#footer'"
-                        class="button font-normal is-white is-outlined rounded-full"
+                        class="button white outlined font-normal rounded-full"
                     >Contact</a>
                 </li>
             </ul>
@@ -77,7 +77,7 @@
     
                                 <hr class="w-3/4 lg:ml-0 my-6">
     
-                                <a class="button is-white is-outlined" data-swiper-parallax-x="-60%">
+                                <a class="button white outlined" data-swiper-parallax-x="-60%">
                                     <span>View site</span>
     
                                     <span class="icon">
@@ -95,7 +95,7 @@
     
                                 <hr class="w-3/4 lg:ml-0 my-6">
     
-                                <a class="button is-white is-outlined" data-swiper-parallax-x="-60%">
+                                <a class="button white outlined" data-swiper-parallax-x="-60%">
                                     <span>View site</span>
     
                                     <span class="icon">
@@ -113,7 +113,7 @@
     
                                 <hr class="w-3/4 lg:ml-0 my-6">
     
-                                <a class="button is-white is-outlined" data-swiper-parallax-x="-60%">
+                                <a class="button white outlined" data-swiper-parallax-x="-60%">
                                     <span>View site</span>
     
                                     <span class="icon">
@@ -180,7 +180,7 @@
                     <div class="content">
                         <p>Just three guys solving business problems through design and development. Having worked for numerous larger agencies we started TalkStudio to provide small businesses with a simple sales solution in the form of websites. No fuss and no expense spared.</p>
                         <p>
-                            <a v-scroll-to="'#footer'" class="button is-grey-darker is-outlined">
+                            <a v-scroll-to="'#footer'" class="button grey-darker outlined">
                                 <span>Talk to us</span>
 
                                 <span class="icon">
@@ -213,7 +213,7 @@
 
                         <div class="w-10 h-1 bg-white mx-auto mb-8"></div>
 
-                        <a class="button is-white is-outlined">
+                        <a class="button white outlined">
                             <span>View site</span>
 
                             <span class="icon">
@@ -235,7 +235,7 @@
 
                         <div class="w-10 h-1 bg-white mx-auto mb-8"></div>
 
-                        <a class="button is-white is-outlined">
+                        <a class="button white outlined">
                             <span>View site</span>
 
                             <span class="icon">
@@ -257,7 +257,7 @@
 
                         <div class="w-10 h-1 bg-white mx-auto mb-8"></div>
 
-                        <a class="button is-white is-outlined">
+                        <a class="button white outlined">
                             <span>View site</span>
 
                             <span class="icon">
@@ -279,7 +279,7 @@
 
                         <div class="w-10 h-1 bg-white mx-auto mb-8"></div>
 
-                        <a class="button is-white is-outlined">
+                        <a class="button white outlined">
                             <span>View site</span>
 
                             <span class="icon">
@@ -301,7 +301,7 @@
 
                         <div class="w-10 h-1 bg-white mx-auto mb-8"></div>
 
-                        <a class="button is-white is-outlined">
+                        <a class="button white outlined">
                             <span>View site</span>
 
                             <span class="icon">
@@ -392,75 +392,12 @@
                 <div class="mb-8 text-center md:text-left lg:w-1/3 lg:pr-10">
                     <h4 class="subtitle text-white">Email us</h4>
                     <h3 class="title text-white mb-4">Got a question</h3>
+
                     <p>Need a full quote or just simply want a chat about your needs? Give us a shout!</p>
                 </div>
 
                 <div class="mb-16 lg:mb-0 lg:w-2/3 lg:pr-10">
-                    
-
-                    <form action="" class="md:flex">
-                        <div class="md:w-1/2 md:pr-2">
-                            <div class="mb-4">
-                                <label for="name" class="hidden">Name</label>
-
-                                <input
-                                    id="name"
-                                    type="text"
-                                    value=""
-                                    class="input is-dark"
-                                    required
-                                    placeholder="Name"
-                                >
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="email" class="hidden">Email</label>
-
-                                <input
-                                    id="email"
-                                    type="text"
-                                    value=""
-                                    class="input is-dark"
-                                    required
-                                    placeholder="Email"
-                                >
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="type" class="hidden">Select enquiry type...</label>
-
-                                <div class="select w-full is-dark">
-                                    <select id="type" required>
-                                        <option value="" selected>Select enquiry type...</option>
-                                        <option value="">Option One</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="md:w-1/2 md:pl-2">
-                            <div class="mb-4">
-                                <label for="message" class="hidden">Message</label>
-
-                                <textarea
-                                    id="message"
-                                    class="textarea is-dark resize-none h-40"
-                                    required
-                                    placeholder="Message"
-                                ></textarea>
-                            </div>
-
-                            <div class="text-right">
-                                <button type="submit" class="button is-white is-outlined w-full md:w-auto">
-                                    <span>Submit</span>
-
-                                    <span class="icon">
-                                        <icon icon="angle-right"></icon>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    <contact-form></contact-form>
                 </div>
             </div>
 
@@ -492,13 +429,13 @@
             </div>
 
             <div class="text-center text-xs">
-                &copy; Copyright 2018 Talk. All Rights Reserved. Privacy policy
+                &copy; Copyright 2019 Talk. All Rights Reserved. Privacy policy
             </div>
         </div>
     </div>
 </footer>
         </div>
 
-        <script src="/assets/build/js/app.js?id=a95700659c411220c522"></script>
+        <script src="/assets/build/js/app.js?id=0a037d03654ad998e364"></script>
     </body>
 </html>

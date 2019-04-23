@@ -17,7 +17,7 @@
     
                                 <hr class="w-3/4 lg:ml-0 my-6">
     
-                                <a class="button is-white is-outlined" data-swiper-parallax-x="-60%">
+                                <a class="button white outlined" data-swiper-parallax-x="-60%">
                                     <span>View site</span>
     
                                     <span class="icon">
@@ -85,7 +85,7 @@
                     <div class="content">
                         <p>Just three guys solving business problems through design and development. Having worked for numerous larger agencies we started TalkStudio to provide small businesses with a simple sales solution in the form of websites. No fuss and no expense spared.</p>
                         <p>
-                            <a v-scroll-to="'#footer'" class="button is-grey-darker is-outlined">
+                            <a v-scroll-to="'#footer'" class="button grey-darker outlined">
                                 <span>Talk to us</span>
 
                                 <span class="icon">
@@ -119,7 +119,7 @@
 
                         <div class="w-10 h-1 bg-white mx-auto mb-8"></div>
 
-                        <a class="button is-white is-outlined">
+                        <a class="button white outlined">
                             <span>View site</span>
 
                             <span class="icon">

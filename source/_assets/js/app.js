@@ -13,6 +13,7 @@ Vue.use(VueAwesomeSwiper);
 import 'swiper/dist/css/swiper.css';
 
 Vue.component('banner-swiper', require('./components/BannerSwiper'));
+Vue.component('contact-form', require('./components/ContactForm'));
 Vue.component('mobile-nav', require('./components/MobileNav'));
 Vue.component('testimonial-swiper', require('./components/TestimonialSwiper'));
 

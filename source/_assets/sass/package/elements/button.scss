@@ -52,7 +52,7 @@ $buttonColours: (
     }
 
     @each $key, $values in $buttonColours {
-        &.is-#{$key} {
+        &.#{$key} {
             @apply text-#{$key};
             @apply bg-#{nth($values, 1)};
             @apply border-#{nth($values, 1)};
@@ -65,11 +65,31 @@ $buttonColours: (
         }
     }
 
-    &.is-outlined {
+    &.outlined {
         background-color: transparent;
 
         &:hover {
             background-color: transparent;
+        }
+    }
+
+    &.loading {
+        color: transparent;
+        pointer-events: none;
+
+        &:after {
+            content: '';
+            width: 1rem;
+            height: 1rem;
+            display: block;
+            position: absolute;
+            border-radius: 100px;
+            top: calc(50% - (1rem / 2));
+            left: calc(50% - (1rem / 2));
+            border: 2px solid transparent;
+            animation: spin 500ms infinite linear;
+            border-left-color: $button-border-color;
+            border-bottom-color: $button-border-color;
         }
     }
 }

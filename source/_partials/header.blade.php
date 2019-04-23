@@ -37,7 +37,7 @@
                 <li>
                     <a
                         v-scroll-to="'#footer'"
-                        class="button font-normal is-white is-outlined rounded-full"
+                        class="button white outlined font-normal rounded-full"
                     >Contact</a>
                 </li>
             </ul>

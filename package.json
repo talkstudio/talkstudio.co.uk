@@ -9,6 +9,10 @@
         "deploy": "git subtree push --prefix build_production origin gh-pages"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.4",
+        "@fortawesome/free-solid-svg-icons": "^5.3.1",
+        "@fortawesome/vue-fontawesome": "^0.1.1",
+        "axios": "^0.18.0",
         "browser-sync": "^2.23.6",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^3.2.3",
@@ -16,17 +20,12 @@
         "laravel-mix": "^2.0.0",
         "node-cmd": "^3.0.0",
         "on-build-webpack": "^0.1.0",
-        "webpack-watch": "^0.2.0",
-        "yargs": "^4.6.0"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^1.2.4",
-        "@fortawesome/free-solid-svg-icons": "^5.3.1",
-        "@fortawesome/vue-fontawesome": "^0.1.1",
         "tailwindcss": "^0.6.6",
         "velocity-animate": "^1.5.2",
         "vue": "^2.5.17",
         "vue-awesome-swiper": "^3.1.3",
-        "vue-scrollto": "^2.13.0"
+        "vue-scrollto": "^2.13.0",
+        "webpack-watch": "^0.2.0",
+        "yargs": "^4.6.0"
     }
 }
